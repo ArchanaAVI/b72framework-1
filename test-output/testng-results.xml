@@ -5,7 +5,7 @@
       <![CDATA[Execution in local system]]>
     </line>
     <line>
-      <![CDATA[Browser is: Firefox]]>
+      <![CDATA[Browser is: chrome]]>
     </line>
     <line>
       <![CDATA[test data:admin]]>
@@ -14,12 +14,12 @@
       <![CDATA[Google]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-03T12:03:20 IST" name="Suite" finished-at="2023-05-03T12:03:34 IST" duration-ms="13966">
+  <suite started-at="2023-05-04T11:37:44 IST" name="Default suite" finished-at="2023-05-04T11:37:58 IST" duration-ms="14107">
     <groups>
     </groups>
-    <test started-at="2023-05-03T12:03:20 IST" name="Test" finished-at="2023-05-03T12:03:34 IST" duration-ms="13966">
+    <test started-at="2023-05-04T11:37:44 IST" name="Default test" finished-at="2023-05-04T11:37:58 IST" duration-ms="14107">
       <class name="script.DemoTest">
-        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.DemoTest@72967906]" started-at="2023-05-03T12:03:20 IST" name="preCondition" finished-at="2023-05-03T12:03:28 IST" duration-ms="8186" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.DemoTest@36902638]" started-at="2023-05-04T11:37:44 IST" name="preCondition" finished-at="2023-05-04T11:37:52 IST" duration-ms="8512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
@@ -42,11 +42,11 @@
               <![CDATA[Execution in local system]]>
             </line>
             <line>
-              <![CDATA[Browser is: Firefox]]>
+              <![CDATA[Browser is: chrome]]>
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="demoTest1()[pri:0, instance:script.DemoTest@72967906]" started-at="2023-05-03T12:03:28 IST" name="demoTest1" finished-at="2023-05-03T12:03:33 IST" duration-ms="4643" status="PASS">
+        <test-method signature="demoTest1()[pri:0, instance:script.DemoTest@36902638]" started-at="2023-05-04T11:37:52 IST" name="demoTest1" finished-at="2023-05-04T11:37:57 IST" duration-ms="5077" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[test data:admin]]>
@@ -56,11 +56,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- demoTest1 -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:script.DemoTest@72967906]" started-at="2023-05-03T12:03:33 IST" name="postCondition" finished-at="2023-05-03T12:03:34 IST" duration-ms="1084" status="PASS">
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:script.DemoTest@36902638]" started-at="2023-05-04T11:37:57 IST" name="postCondition" finished-at="2023-05-04T11:37:58 IST" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- script.DemoTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
