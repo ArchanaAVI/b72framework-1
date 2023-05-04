@@ -7,17 +7,20 @@
     <line>
       <![CDATA[Browser is: chrome]]>
     </line>
+    <line>
+      <![CDATA[HomePage is Not Displayed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-05-04T12:19:09 IST" name="Default suite" finished-at="2023-05-04T12:19:19 IST" duration-ms="9393">
+  <suite started-at="2023-05-04T12:47:43 IST" name="Default suite" finished-at="2023-05-04T12:48:19 IST" duration-ms="35835">
     <groups>
     </groups>
-    <test started-at="2023-05-04T12:19:09 IST" name="Default test" finished-at="2023-05-04T12:19:19 IST" duration-ms="9393">
-      <class name="script.DemoTest">
-        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.DemoTest@36902638]" started-at="2023-05-04T12:19:09 IST" name="preCondition" finished-at="2023-05-04T12:19:18 IST" duration-ms="8825" status="PASS">
+    <test started-at="2023-05-04T12:47:43 IST" name="Default test" finished-at="2023-05-04T12:48:19 IST" duration-ms="35835">
+      <class name="script.ValidLogin">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.ValidLogin@36902638]" started-at="2023-05-04T12:47:43 IST" name="preCondition" finished-at="2023-05-04T12:47:57 IST" duration-ms="13602" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://www.google.com]]>
+                <![CDATA[https://demo.actitime.com/]]>
               </value>
             </param>
             <param index="1">
@@ -40,20 +43,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="demoTest1()[pri:0, instance:script.DemoTest@36902638]" started-at="2023-05-04T12:19:18 IST" name="demoTest1" finished-at="2023-05-04T12:19:18 IST" duration-ms="24" status="FAIL">
-          <exception class="java.lang.Error">
+        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@36902638]" started-at="2023-05-04T12:47:57 IST" name="testValidLogin" finished-at="2023-05-04T12:48:19 IST" duration-ms="21623" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unresolved compilation problems: 
-GooglePage cannot be resolved to a type
-GooglePage cannot be resolved to a type
-]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-GooglePage cannot be resolved to a type
-GooglePage cannot be resolved to a type
-
-at script.DemoTest.demoTest1(DemoTest.java:18)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at script.ValidLogin.testValidLogin(ValidLogin.java:25)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -82,15 +83,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[HomePage is Not Displayed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- demoTest1 -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:script.DemoTest@36902638]" started-at="2023-05-04T12:19:18 IST" name="postCondition" finished-at="2023-05-04T12:19:19 IST" duration-ms="414" status="PASS">
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:script.ValidLogin@36902638]" started-at="2023-05-04T12:48:19 IST" name="postCondition" finished-at="2023-05-04T12:48:19 IST" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- script.DemoTest -->
+      </class> <!-- script.ValidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

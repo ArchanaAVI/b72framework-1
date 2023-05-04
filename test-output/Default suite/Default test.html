@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 04 12:19:09 IST 2023</td>
+<td>Started on:</td><td>Thu May 04 12:47:43 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9393 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35835 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='script.DemoTest.demoTest1()'><b>demoTest1</b><br>Test class: script.DemoTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problems: 
-	GooglePage cannot be resolved to a type
-	GooglePage cannot be resolved to a type
+<td title='script.ValidLogin.testValidLogin()'><b>testValidLogin</b><br>Test class: script.ValidLogin<br/>
+<a href="#Output-2000563893" onClick='toggleBox("Output-2000563893", this, "Show output", "Hide output");'>Show output</a>
 
-	at script.DemoTest.demoTest1(DemoTest.java:18)
+<a href="#Output-2000563893" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2000563893">
+HomePage is Not Displayed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at script.ValidLogin.testValidLogin(ValidLogin.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -108,12 +116,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace645208036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace645208036'><pre>java.lang.Error: Unresolved compilation problems: 
-	GooglePage cannot be resolved to a type
-	GooglePage cannot be resolved to a type
-
-	at script.DemoTest.demoTest1(DemoTest.java:18)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2000563893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2000563893'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at script.ValidLogin.testValidLogin(ValidLogin.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -141,8 +150,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>script.DemoTest@36902638</td></tr>
+<td>21</td>
+<td>script.ValidLogin@36902638</td></tr>
 </table><p>
 </body>
 </html>
